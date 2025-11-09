@@ -1,5 +1,2 @@
-squares = []
-for i in range(0,21): # перебираем числа от 0 до 21
-    if i%2 == 0:# если число четное то выводим его квадрат
-        squares.append(i * i)
+squares = [i * i for i in range(0, 21) if i % 2 == 0]#генератор списка находим квадрат у четных чисел
 print(squares)
