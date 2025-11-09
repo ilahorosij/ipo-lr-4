@@ -1,7 +1,5 @@
 #Каленик Илья
-numbers = list(map(int,input('введите числа ').split()))#запрашиваем числa map int преобразовывет все слова в числа
-squares = []
-for i in numbers: # начинаем с 1 до n с шагом 1
-    squares.append(i * i)# умножаем и выводим
+numbers = list(map(int, input('введите числа ').split()))#запрашиваем числa map int преобразовывет все слова в числа
+squares = [i * i for i in numbers] # генератор списков и выводим
 print(numbers)
 print(squares)
